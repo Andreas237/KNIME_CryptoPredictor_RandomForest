@@ -6,8 +6,8 @@
 <entry key="memory_policy" type="xstring" value="CacheInMemory"/>
 </config>
 <config key="model">
-<entry key="targetColumn" type="xstring" value="DOGE-up-DoD"/>
-<entry key="seed" type="xstring" value="1519256299664"/>
+<entry key="targetColumn" type="xstring" value="DOGE-Win"/>
+<entry key="seed" type="xstring" value="1519256446733"/>
 <entry key="maxLevels" type="xint" value="-1"/>
 <entry key="minNodeSize" type="xint" value="-1"/>
 <entry key="minChildSize" type="xint" value="-1"/>
@@ -27,7 +27,7 @@
 <config key="columnFilterConfig">
 <entry key="filter-type" type="xstring" value="STANDARD"/>
 <config key="included_names">
-<entry key="array-size" type="xint" value="26"/>
+<entry key="array-size" type="xint" value="13"/>
 <entry key="0" type="xstring" value="BTC-Date"/>
 <entry key="1" type="xstring" value="BTC-Open"/>
 <entry key="2" type="xstring" value="BTC-High"/>
@@ -35,33 +35,33 @@
 <entry key="4" type="xstring" value="BTC-Close"/>
 <entry key="5" type="xstring" value="BTC-Adj Close"/>
 <entry key="6" type="xstring" value="BTC-Volume"/>
-<entry key="7" type="xstring" value="ETH-Open"/>
-<entry key="8" type="xstring" value="ETH-High"/>
-<entry key="9" type="xstring" value="ETH-Low"/>
-<entry key="10" type="xstring" value="ETH-Close"/>
-<entry key="11" type="xstring" value="ETH-Adj Close"/>
-<entry key="12" type="xstring" value="ETH-Volume"/>
-<entry key="13" type="xstring" value="DOGE-Open"/>
-<entry key="14" type="xstring" value="DOGE-High"/>
-<entry key="15" type="xstring" value="DOGE-Low"/>
-<entry key="16" type="xstring" value="DOGE-Close"/>
-<entry key="17" type="xstring" value="DOGE-Adj Close"/>
-<entry key="18" type="xstring" value="DOGE-Volume"/>
-<entry key="19" type="xstring" value="LTC-Open"/>
-<entry key="20" type="xstring" value="LTC-High"/>
-<entry key="21" type="xstring" value="LTC-Low"/>
-<entry key="22" type="xstring" value="LTC-Close"/>
-<entry key="23" type="xstring" value="LTC-Adj Close"/>
-<entry key="24" type="xstring" value="LTC-Volume"/>
-<entry key="25" type="xstring" value="BTC-up-DoD"/>
+<entry key="7" type="xstring" value="DOGE-Open"/>
+<entry key="8" type="xstring" value="DOGE-High"/>
+<entry key="9" type="xstring" value="DOGE-Low"/>
+<entry key="10" type="xstring" value="DOGE-Close"/>
+<entry key="11" type="xstring" value="DOGE-Adj Close"/>
+<entry key="12" type="xstring" value="DOGE-Volume"/>
 </config>
 <config key="excluded_names">
-<entry key="array-size" type="xint" value="5"/>
+<entry key="array-size" type="xint" value="18"/>
 <entry key="0" type="xstring" value="ETH-Date"/>
-<entry key="1" type="xstring" value="DOGE-Date"/>
-<entry key="2" type="xstring" value="LTC-Date"/>
-<entry key="3" type="xstring" value="DOGE-Win"/>
-<entry key="4" type="xstring" value="BTC-Win"/>
+<entry key="1" type="xstring" value="ETH-Open"/>
+<entry key="2" type="xstring" value="ETH-High"/>
+<entry key="3" type="xstring" value="ETH-Low"/>
+<entry key="4" type="xstring" value="ETH-Close"/>
+<entry key="5" type="xstring" value="ETH-Adj Close"/>
+<entry key="6" type="xstring" value="ETH-Volume"/>
+<entry key="7" type="xstring" value="DOGE-Date"/>
+<entry key="8" type="xstring" value="LTC-Date"/>
+<entry key="9" type="xstring" value="LTC-Open"/>
+<entry key="10" type="xstring" value="LTC-High"/>
+<entry key="11" type="xstring" value="LTC-Low"/>
+<entry key="12" type="xstring" value="LTC-Close"/>
+<entry key="13" type="xstring" value="LTC-Adj Close"/>
+<entry key="14" type="xstring" value="LTC-Volume"/>
+<entry key="15" type="xstring" value="DOGE-up-DoD"/>
+<entry key="16" type="xstring" value="BTC-up-DoD"/>
+<entry key="17" type="xstring" value="BTC-Win"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
 <config key="name_pattern">
@@ -91,8 +91,8 @@
 <entry key="type" type="xstring" value="WARNING"/>
 <entry key="message" type="xstring" value="1 column(s) were ignored due to missing domain information: [&quot;BTC-Date&quot;] -- change the node configuration or use a Domain Calculator node to fix it"/>
 </config>
-<entry key="factory" type="xstring" value="org.knime.base.node.mine.treeensemble2.node.randomforest.learner.regression.RandomForestRegressionLearnerNodeFactory"/>
-<entry key="node-name" type="xstring" value="Random Forest Learner (Regression)"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.mine.treeensemble2.node.randomforest.learner.classification.RandomForestClassificationLearnerNodeFactory"/>
+<entry key="node-name" type="xstring" value="Random Forest Learner"/>
 <entry key="node-bundle-name" type="xstring" value="Decisions Tree Ensembles for KNIME"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.treeensembles2"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -102,7 +102,7 @@
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-feature-version" type="xstring" value="3.5.2.v201802051426"/>
 <config key="factory_settings"/>
-<entry key="name" type="xstring" value="Random Forest Learner (Regression)"/>
+<entry key="name" type="xstring" value="Random Forest Learner"/>
 <entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
@@ -110,21 +110,21 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 469, Cols: 35"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 469, Cols: 37"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 <config key="port_2">
 <entry key="index" type="xint" value="2"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 25, Cols: 6"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 12, Cols: 6"/>
 <entry key="port_dir_location" type="xstring" value="port_2"/>
 </config>
 <config key="port_3">
 <entry key="index" type="xint" value="3"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.base.node.mine.treeensemble2.model.TreeEnsembleModelPortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.base.node.mine.treeensemble2.model.TreeEnsembleModelPortObject"/>
-<entry key="port_object_summary" type="xstring" value="100 classifiers on 25 attributes"/>
+<entry key="port_object_summary" type="xstring" value="100 classifiers on 12 attributes"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_3"/>
@@ -142,6 +142,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" value="filestore"/>
-<entry key="file_store_id" type="xstring" value="84cc8d23-0257-47fd-bbb9-a4cd97c5bc98"/>
+<entry key="file_store_id" type="xstring" value="bfc934a5-97a3-407d-805b-def04ceb04de"/>
 </config>
 </config>
